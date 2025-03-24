@@ -1,2 +1,2 @@
 # Web-Ecommerce
-This Repository for my class
+This Repository for my learning form my self
