@@ -1,0 +1,71 @@
+/* style.css */
+.logo-img {
+height: 50px;
+width: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+       margin:0;
+       padding:0;
+       box-sizing: border-box;
+       font-family: 'Roboto', sans-serif;
+}
+body{
+       background-color: #bbbbbb;
+}
+.hidden{
+       display: none;
+}
+.heading{
+       display: flex;
+       justify-content: space-between;
+       height: 8vh;
+       background-color: #003;
+       padding: 0 2%;
+       border-bottom: solid 2px grey;
+}
+.left-heading{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height:inherit;
+}
+.right-heading {
+       display: flex;
+       justify-content: flex;
+       align-items: center;
+       height: inherit;
+       gap: 1rem; /* ช่องว่างระหว่างไอเท็มฝั่งขวาทั้งหมด */
+       padding-right: 1%;
+}
+.logo{
+       height:inherit;
+       padding-right: 1rem;
+}
+.logo img{
+       height: 100%;
+       border-radius: 50%;
+}
+.login-status{
+       display: flex;
+       color: white;
+}
+.login-status *{
+       padding-right: 1rem;
+}
+.cart{
+       color: white;
+}
+.search-form{
+       display: flex;
+}
+input[type="search"],
+input[type="submit"]{
+       border-radius: 5px 10px;
+       margin-right: 10px;
+}
+.navigation{
+       background-color: #002;
+       height: 8vh;
+}
