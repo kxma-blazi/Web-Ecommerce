@@ -1,0 +1,211 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*/
+.nav-buttons{
+       margin-left: 60%;
+
+}
+
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; /* background-color: #f0f0f0; */
+}
+
+h1{
+       font-size: 2.5rem;
+       font-weight: 700;
+}
+
+h2{
+       font-size: 1.8rem;
+       font-weight: 600;
+}
+
+
+h3{
+       font-size: 1.5rem;
+       font-weight: 800;
+}
+
+
+h4{
+       font-size: 1.2rem;
+       font-weight: 600;
+}
+
+
+h5{
+       font-size: 1rem;
+       font-weight: 400;
+}
+
+h6{
+       color: #D8D8D8;
+}
+
+button{
+
+       font-size: 0.8rem;
+       font-weight: 900;
+       outline: none;
+       border: none;
+       background-color: #1d1d1d;
+       color: aliceblue;
+       padding: 13px 30px;
+       text-transform: uppercase;
+       cursor: pointer;
+       transition: 0.5s ease;
+
+}
+
+button:hover{
+       color: coral; background-color: black;
+}
+
+.navbar{
+       font-size: 16px;
+       padding-top: 2rem !important;
+       padding-bottom: 2rem !important;
+       top: 0%;
+       left: 0%;
+}
+
+.navbar-light .navbar-nav .nav-link{
+       padding: 0 20px;
+       color: #000;
+       transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i:hover{
+       color: coral;
+
+}
+
+.navbar i { /* ให้ cursur เปลี่ยน */
+       font-size: 1.2rem;
+       padding: 0 0.7px;
+       transition: 0.4s ease;;
+       font-width: 500;
+       cursor: pointer;
+       margin-left: 5px;
+}
+
+@media only screen and (max-width: 990px) {
+
+       .nav-buttons{
+              margin: 10px;
+       }
+       
+
+       .nav-buttons ul{
+              margin: 1rem;
+              justify-content: flex-start;
+              align-items: flex-start;
+              text-align: left;
+       }
+
+       .nav-buttons ul .fas{ /* ไอคอน {Top * Right * Bottom * Left} */
+              margin: 20px 5px 10px 20px;
+
+       }
+}
+
+
+
+#home{
+       background-image: url('../imgs/bg.jpeg'); /* พื้นหลัง */
+       width:100%;
+       height: 100vh;
+       background-size: cover;
+       background-position-x: 200px;
+       background-position-y: 80px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+
+}
+
+#home span{ /* สีตัวอักษรหน้าแรก */
+       color: coral;
+}
+
+#new .one img{
+       width: 100%;
+       height: 100%;
+       background-position:center;
+       background-repeat: no-repeat;
+       background-size: cover;
+
+}
+
+#new .one{
+       position: relative;
+}
+
+#new .one .details{
+       position: absolute;
+       top:0;
+       left: 0;
+       color: burlywood;
+       font-weight: bold;
+       transition: 0.4s ease;
+       opacity: 0.5;
+       background-color: rgb(1, 1, 1);
+       width: 100%;
+       height: 100%;
+}
+
+#new .one .details:hover{
+       background-color: darkgoldenrod;
+}
+
+#new .one:nth-child(1) .details{ /* position ตัวอักษรใน card */
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: flex-start;
+       text-align: start;
+
+}
+
+#new .one:nth-child(2) .details{ 
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+
+}
+
+#new .one:nth-child(3) .details{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: flex-end;
+       text-align: end;
+
+}
+
+
+/* Card Product */
+
+.product{
+       cursor: pointer;
+       margin-bottom: 2rem;
+}
+
+.product img{
+       transition: 0.3s all;;
+}
+
+.product:hover img{
+       opacity:0.7;
+}
